@@ -12,11 +12,13 @@ This implementation is built on top of scikit-multiflow, an open source machine 
 ## Runing an example
 
 
-## Results of IForest ASD vs Half Space Trees
+## Results : Comparison of IForest ASD vs Half Space Trees
 
+[Results of IForest ASD vs Half Space Trees]
+
+<img src="https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Experiments_Paper.PNG">
+
+<img "https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Metrics_IForestASD_HSTrees.PNG">
 
 ## References
 
-[Results of IForest ASD vs Half Space Trees](https://github.com/Elmecio/OD_Jupyter/blob/master/datasets/synthetic_2D_data/two_dimension_datasets_generation.ipynb)
-<img src="https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Experiments_Paper.PNG">
-**Figure 2**: Experimental evaluation results.
