@@ -5,8 +5,11 @@ This code is related to the publication IForestASD for Anomaly Detection in Scik
 Code source and notebooks provided have been used to compute results mentionned in the experimental evaluation.
 
 ## Algorithm implemented (IForestASD by Ding & Fei, 2013)
-This code provide an open source implementation of Isolation Forest ASD algoritm by Ding & Fei 
-This implementation is built on top of scikit-multiflow, an open source machine learning framework for data streams https://scikit-multiflow.github.io/. It provide a variety of streaming methods : Incremental & Adaptive learning, from both supervised, unsupervised algorithms to multi-outpout and data stream generators.
+This code provide an open source implementation of Isolation Forest ASD algoritm by Ding & Fei [1] based on Isolation Forest [2].
+
+This implementation is built on top of scikit-multiflow [3], an open source machine learning framework for data streams https://scikit-multiflow.github.io/. It provide a variety of streaming methods : Incremental & Adaptive learning, from both supervised, unsupervised algorithms to multi-outpout and data stream generators.
+
+<img src= "https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/algorithm_IForest_ASD_Ding_Fei_2013.png">
 
 
 ## Runing an example
