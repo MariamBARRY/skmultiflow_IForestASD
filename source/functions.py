@@ -22,7 +22,7 @@ class Comparison:
                               'running_time','model_size']):
     
     from skmultiflow.anomaly_detection import HalfSpaceTrees
-    from iforestasd_scikitmultiflow import IsolationForestStream
+    from source.iforestasd_scikitmultiflow import IsolationForestStream
     from skmultiflow.evaluation.evaluate_prequential import EvaluatePrequential
     
     # Creation f the result csv
@@ -63,16 +63,16 @@ class Comparison:
          return self.get_data_generated(classification_function, 
                                         noise_percentage, random_state);
       elif dataset_name=="HTTP":
-         path = "../datasets/HTTP.csv"
+         path = "datasets/HTTP.csv"
          return self.get_file_stream(path);
       elif dataset_name=="ForestCover":
-         path = "../datasets/ForestCover.csv"
+         path = "datasets/ForestCover.csv"
          return self.get_file_stream(path);
       elif dataset_name=="Shuttle":
-         path = "../datasets/Shuttle.csv"
+         path = "datasets/Shuttle.csv"
          return self.get_file_stream(path);
       elif dataset_name=="SMTP":
-         path = "../datasets/SMTP.csv"
+         path = "datasets/SMTP.csv"
          return self.get_file_stream(path);
       else:
          print("The specified dataset do not exist yet."+ 

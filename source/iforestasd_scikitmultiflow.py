@@ -269,7 +269,7 @@ self.n_estimators
     iforest = IsolationTreeEnsemble(self.window_size,self.n_estimators,self.random_state)
     self.ensemble = iforest
     self.ensemble.fit(window)
-    print("iForest ASD Update the model by training a new iForest")
+    #print("iForest ASD Update the model by training a new iForest")
     
           
   def anomaly_scores_rate(self, window):

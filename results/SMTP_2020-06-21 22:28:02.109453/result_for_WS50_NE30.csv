@@ -1,0 +1,7 @@
+# TEST CONFIGURATION BEGIN
+# FileStream(filename='SMTP.csv', target_idx=-1, n_targets=1, cat_features=None)
+# [HSTrees] HalfSpaceTrees(anomaly_threshold=0.5, depth=15, n_estimators=30, n_features=3, random_state=None, size_limit=50, window_size=50)
+# [iForestASD] IsolationForestStream(anomaly_threshold=0.5, drift_threshold=0.03, n_estimators=30, random_state=None, window_size=50)
+# EvaluatePrequential(batch_size=1, data_points_for_classification=False, max_samples=10000, max_time=inf, metrics=['accuracy', 'f1', 'kappa', 'kappa_m', 'running_time', 'model_size'], n_wait=10000, output_file='results/SMTP_2020-06-21 ' '22:28:02.109453/result_for_WS50_NE30.csv', pretrain_size=1, restart_stream=True, show_plot=True)
+# TEST CONFIGURATION END
+id,mean_acc_[HSTrees],current_acc_[HSTrees],mean_acc_[iForestASD],current_acc_[iForestASD],mean_f1_[HSTrees],current_f1_[HSTrees],mean_f1_[iForestASD],current_f1_[iForestASD],mean_kappa_[HSTrees],current_kappa_[HSTrees],mean_kappa_[iForestASD],current_kappa_[iForestASD],mean_kappa_m_[HSTrees],current_kappa_m_[HSTrees],mean_kappa_m_[iForestASD],current_kappa_m_[iForestASD],training_time_[HSTrees],testing_time_[HSTrees],total_running_time_[HSTrees],training_time_[iForestASD],testing_time_[iForestASD],total_running_time_[iForestASD],model_size_[HSTrees],model_size_[iForestASD]
