@@ -18,5 +18,5 @@ This implementation is built on top of scikit-multiflow, an open source machine 
 ## References
 
 [Results of IForest ASD vs Half Space Trees](https://github.com/Elmecio/OD_Jupyter/blob/master/datasets/synthetic_2D_data/two_dimension_datasets_generation.ipynb)
-<img src="datasets/synthetic_2D_data/synthetic_2D_dataset_V1.0.0_29_20_2020-05-26 03:25:56.440896.png">
-**Figure 2**: Shows an example of a generated 2 dimensions synthetic dataset.
+<img src="https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Experiments_Paper.PNG">
+**Figure 2**: Experimental evaluation results.
