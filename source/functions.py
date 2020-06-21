@@ -100,6 +100,7 @@ class Comparison:
                                   anomaly_label:str='\'Anomaly\'', file_name:str="new"):
       import numpy as np
       import pandas as pd
+      
       full_dataset[y_column] = np.where(full_dataset[y_column]==anomaly_label,1,0)
       dataset = pd.DataFrame(full_dataset)
       dataset.drop([0], inplace=True)
@@ -110,3 +111,45 @@ class Comparison:
   def check_directory(self,path):
       from pathlib import Path
       Path(path).mkdir(parents=True, exist_ok=True) 
+      
+     
+  def merge_file(self, folder_path, output_file = 'output.csv'):
+    import os
+    import pandas as pd
+    result = pd.DataFrame()
+    print('List of file merged')
+    print()
+    no = '.ipynb_checkpoints'
+    for file_ in os.listdir(folder_path):
+        print(file_)
+        #list.append(file_)
+        if file_ != no:
+            print(file_)
+            df = pd.read_csv(folder_path+file_, sep = ',', skiprows=6, header = 0, dtype='unicode', error_bad_lines=False)
+            df.at[0,'param'] = str(file_)
+            df.at[0,'window'] = df.param.apply(lambda st: st[st.find("WS")+2:st.find("_NE")])[0]
+            df.at[0,'estimators']= df.param.apply(lambda st: st[st.find("NE")+2:st.find("_UP")])[0]
+            df.at[0,'updates']= df.param.apply(lambda st: st[st.find("UP_")+3:st.find(".csv")])[0]
+ 
+            result = pd.concat([result,df],ignore_index=True)
+    #result.sort_values(by = ['window', 'estimators'], inplace= True)
+    result.columns=df.columns
+    #output_file = 'RESULT_SHUTTLE10K.csv'
+    result.to_csv(output_file,index=False)
+    
+    return result
+   
+  def data_prep (self, df_forest):
+    df_forest.dropna(inplace= True)
+    df_forest.sort_values(by = ['window', 'estimators'], inplace= True)
+    df_forest.columns = df_forest.columns.str.replace('current_', '')
+    df_forest.drop(columns = ['param']).astype(float)
+    df_forest=df_forest.drop(columns = ['param']).astype(float)
+    df_forest.window = df_forest.window.astype(int)
+    df_forest.estimators = df_forest.estimators.astype(int)
+    df_forest['Windows_Trees_set_up']='W'+df_forest['window'].astype(str)+'__'+'T'+df_forest['estimators'].astype(str)
+    df_forest.columns = df_forest.columns.str.replace('current_', '')
+    df_forest.sort_values(by = ['window', 'estimators'], inplace= True)
+    
+    return df_forest
+ 
