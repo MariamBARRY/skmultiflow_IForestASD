@@ -1,5 +1,4 @@
-# skmultiflow_IForestASD
- IForestASD for Anomaly Detection in Scikit-MultiFLow.
+# IForestASD for Anomaly Detection implemented on top of Scikit-MultiFLow.
 
 This code is related to the publication IForestASD for Anomaly Detection in Scikit-MultiFLow.
 Code source and notebooks provided have been used to compute results mentionned in the experimental evaluation.
