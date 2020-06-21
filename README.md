@@ -13,7 +13,7 @@ This implementation is built on top of scikit-multiflow [3], an open source mach
 
 ## Results on Real Datasets 
 
-[Comparison of IForest ASD vs Half Space Trees performance (output from Scikit-multiflow prequential evaluator metrics)]
+[Comparison of IForest ASD vs Half Space Trees performance based on 10 000 samples (output from Scikit-multiflow prequential evaluator metrics)]
 
 <img src= "https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Metrics_IForestASD_HSTrees.PNG">
 
