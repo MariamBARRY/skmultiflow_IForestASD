@@ -16,10 +16,11 @@ This implementation is built on top of scikit-multiflow, an open source machine 
 
 [Comparison of IForest ASD vs Half Space Trees performance]
 
-<img src="https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Experiments_Paper.PNG">
-
-
 <img src= "https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Metrics_IForestASD_HSTrees.PNG">
+
+[Running Time & Model size comparison on SHUTTLE & Forest Cover Datasets]
+
+<img src="https://github.com/MariamBARRY/skmultiflow_IForestASD/blob/master/figures/Results_Experiments_Paper.PNG">
 
 ## References
 
