@@ -29,9 +29,10 @@ An Implementation of Unsupervised Anomaly Detection with Isolation Forest in Sci
 
 ## References :
 
- - [Algorithm Implemented] An Anomaly Detection Approach Based on Isolation Forest  for Streaming Data using Sliding Window (Ding \& Fei, 2013) https://www.sciencedirect.com/science/article/pii/S1474667016314999
+ -[1] [Algorithm Implemented] An Anomaly Detection Approach Based on Isolation Forest  for Streaming Data using Sliding Window (Ding \& Fei, 2013) https://www.sciencedirect.com/science/article/pii/S1474667016314999
 
- - Scikit MultiFlow HalfSpace Trees Implementation - “Fast anomaly detection for streaming data,” in IJCAI Proceedings - S.C.Tan, K.M.Ting, and T.F.Liu, https://github.com/scikit-multiflow/scikit-multiflow/blob/a7e316d/src/skmultiflow/anomaly_detection/half_space_trees.py#L11
-
- - Original implementation of Isolation Forest (Isolation-based Anomaly Detection  - Liu, Ting \& Zhou, 2011 - https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tkdd11.pdf
+ - [2] Original implementation of Isolation Forest (Isolation-based Anomaly Detection  - Liu, Ting \& Zhou, 2011 - https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tkdd11.pdf
  available on  https://github.com/Divya-Bhargavi/isolation-forest 
+ 
+  - [3] Scikit MultiFlow https://scikit-multiflow.github.io/ HalfSpace Trees Implementation is available here  - “Fast anomaly detection for streaming data,” in IJCAI Proceedings - S.C.Tan, K.M.Ting, and T.F.Liu https://github.com/scikit-multiflow/scikit-multiflow/blob/a7e316d/src/skmultiflow/anomaly_detection/half_space_trees.py#L11
+
